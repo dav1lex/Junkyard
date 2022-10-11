@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>HTML Lesson</title>
+</head>
+<style>
+    html {
+        background-color: beige;
+    }
+
+    #benimbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #konteyner {
+        display: flex;
+        justify-content: left;
+        width: 100vw !important;
+        background-color: #212429;
+        border-bottom: 3px solid #fff;
+        top: 0px !important;
+
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    #list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        width: 100vw;
+
+    }
+    #list li {
+        color: #fff;
+        padding-right: 15px !important;
+
+    }
+    #navbar {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #navlink {
+        color: #96989b !important;
+    }
+    #textarea{
+        margin-left: 100px;
+        font-size: 15px;
+        border-radius: 4px;
+        padding-left: 10px;
+        height: 25px;
+    }
+    #buton1{
+        background-color: transparent;
+        font-size: 15px;
+        color: green;
+        border-color: green;
+        border: 1px solid green;
+        border-radius: 5px;
+        padding: 7px;
+
+    }
+ li #disabled{
+    color: #35393e;
+    cursor: not-allowed;
+}
+
+</style>
+
+<body>
+<nav id="benimbar">
+    <div id="konteyner">
+        <ul id="list">
+            <li id="navbar"><a href="">Navbar</a></li>
+            <li id="navhome"><a href="">Home</a></li>
+            <a href=""><li id="navlink">Link</li></a>
+            <li id="dropdown"><select>
+                <option>No idea about this one</option>
+                <option>option2</option>
+            </select></li>
+            <li><a href="" id="disabled">Disabled</a> </li>
+            <li><input id="textarea" type="text" placeholder="Search"></li>
+            <li><button id="buton1">Search</button></li>
+        </ul>
+        
+    </div>
+
+
+</nav>
+
+
+</body>
+</html>

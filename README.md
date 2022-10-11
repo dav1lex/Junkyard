@@ -1,4 +1,3 @@
-# Junkyard
 <p>
 <h3>Stuff for course</h3>
 <hr>

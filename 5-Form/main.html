@@ -20,18 +20,25 @@
     <input type="text" required placeholder="Name">
     <input type="text" required placeholder="Surname">
     <br><br>
-    <label>Birth date:</label>  <input type="date">
+    <label>Birth date:</label>  <input type="date" required>
     <br><br>
     <label for="num">Phone number:</label><input type="number" pattern="[0-9]" required id="num" ><br><br>
     <div>
-    <input type="radio" name="radyo" id="free"><label for="free">Free Plan - 10$</label><br><br>
-    <input type="radio" name="radyo" id="pro"><label for="pro">Pro Plan - 20$</label><br><br>
-    <input type="radio" name="radyo" id="ultrapro"><label for="ultrapro">ultra extra Plan - 30$</label>
+    <input type="radio" name="radyo" id="free" required><label for="free">Free Plan - 10$</label><br><br>
+    <input type="radio" name="radyo" id="pro" required><label for="pro">Pro Plan - 20$</label><br><br>
+    <input type="radio" name="radyo" id="ultrapro" required><label for="ultrapro">ultra extra Plan - 30$</label>
         <br><br>
     </div>
-<label>Credit card number:</label><input type="number" required placeholder="xxxx-xxxx-xxxx-xxxx"> <input type="number" placeholder="CVC" max="999" min="100"> <label>Expiration date:</label><input type="date" required>
+<label>Credit card number:</label>
+    <input type="number" required placeholder="xxxx" MAX="9999" min="1000">
+    <input type="number" required placeholder="xxxx" MAX="9999" min="1000">
+    <input type="number" required placeholder="xxxx" MAX="9999" min="1000">
+    <input type="number" required placeholder="xxxx" MAX="9999" min="1000">
+    <input type="number" required placeholder="CVC" max="999" min="100">
+    <label>Expiration date:</label>
+    <input type="date" required>
     <br>
-    <input type="text" placeholder="Billing Address"><br><br>
+    <input type="text" required placeholder="Billing Address"><br><br>
     <button>Submit</button>
 </form>
 

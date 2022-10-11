@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>HTML Lesson</title>
+</head>
+<style>
+
+</style>
+
+<body>
+<form>
+    <input type="email" placeholder="E-mail" required><br><br>
+    <input type="password" required placeholder="Password"><br><br>
+    <input type="text" required placeholder="Name">
+    <input type="text" required placeholder="Surname">
+    <br><br>
+    <label>Birth date:</label>  <input type="date">
+    <br><br>
+    <label for="num">Phone number:</label><input type="number" pattern="[0-9]" required id="num" ><br><br>
+    <div>
+    <input type="radio" name="radyo" id="free"><label for="free">Free Plan - 10$</label><br><br>
+    <input type="radio" name="radyo" id="pro"><label for="pro">Pro Plan - 20$</label><br><br>
+    <input type="radio" name="radyo" id="ultrapro"><label for="ultrapro">ultra extra Plan - 30$</label>
+        <br><br>
+    </div>
+<label>Credit card number:</label><input type="number" required placeholder="xxxx-xxxx-xxxx-xxxx"> <input type="number" placeholder="CVC" max="999" min="100"> <label>Expiration date:</label><input type="date" required>
+    <br>
+    <input type="text" placeholder="Billing Address"><br><br>
+    <button>Submit</button>
+</form>
+
+
+</body>
+</html>

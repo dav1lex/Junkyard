@@ -1,0 +1,52 @@
+.konteyner{
+    display: grid;
+    max-width: 150px;
+    grid-template-columns: 70px 70px 70px 70px;
+}
+
+.sayi{
+    border: 1px solid #899dae;
+    text-align: center;
+    font-size: 30px;
+    padding: 1rem;
+    background-color: #eff2f5;
+}
+.buton{
+    border: 1px solid #899dae;
+    text-align: center;
+    font-size: 30px;
+    padding: 1rem;
+    background-color: #d2dce4;
+}
+.esit{
+   font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    padding: 1rem;
+    background-color: #fd7575;
+}
+.sonuc{
+    border-top: 1px solid #27354C;
+    text-align: center;
+    font-size: 30px;
+    padding: 0.5rem;
+    background-color: #424c52;
+    color: white;
+}
+
+#esit1{
+    border-top: 1px solid #899dae;
+}
+
+#solust{
+    border-top-left-radius: 10px;
+}
+#sagust{
+    border-top-right-radius: 10px;
+}
+#solalt{
+    border-bottom-left-radius: 10px;
+}
+#sagalt{
+    border-bottom-right-radius: 10px;
+}

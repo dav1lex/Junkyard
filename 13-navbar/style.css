@@ -1,0 +1,97 @@
+
+html {
+
+    font-family: "Yu Gothic UI Light", serif;
+    font-size: 1.3rem;
+}
+
+.benimbar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #dedddd;
+    max-height: 70px !important;
+    min-height: 70px !important;
+
+}
+
+.navitems {
+    display: flex;
+
+}
+
+.konteyner {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+
+}
+.searchbar{
+    padding-right: 10rem;
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+}
+.navlogo{
+    align-self: center;
+    padding-left: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navitem{
+    padding: 0 2rem 0 0 ;
+    list-style-type: none;
+}
+.navitem a {
+    text-decoration: none;
+}
+
+#select{
+
+}
+.disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+    user-select: none;
+}
+.searchbutton{
+    padding: 0.4rem;
+    background-color: transparent;
+    margin-left: 5px;
+    border-radius: 0.25rem;
+    border: 1px solid #28a745;
+    color: #28a745;
+    cursor: pointer;
+
+}
+.searchbutton:hover{
+    transition: 0.3s;
+    background-color: #28a745;
+    color: white;
+}
+.input{
+    border-radius: 3px;
+    border: 1px solid grey;
+
+}
+.mobilebut{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navitems {
+        display: none;
+    }
+    .searchbar{
+        display: none;
+    }
+    .mobilebut{
+        display: inline-block;
+       padding: 0 1rem;
+    }
+}

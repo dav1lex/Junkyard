@@ -1,5 +1,10 @@
+.container{
+    display: flex;
+flex-wrap: wrap;
+}
+
 .card {
-    max-width: 20rem;
+    max-width: 16rem;
     height: auto;
     border: 1px solid #d6d6d6;
     border-radius: 15px;
@@ -52,22 +57,38 @@
     text-decoration: none;
     color: #007bff;
 }
-.container{
-    display: flex;
 
-}
 
-@media only screen and (max-width: 900px) {
+/*tablet*/
+@media  (max-width: 768px) {
     .container{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
     }
+    .card{
+
+        margin: 0.5rem;
+    }
 }
 
-@media only screen and (max-width: 375px) {
+/*mobil*/
+@media  (max-width: 375px) {
 
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .card{
+        max-width: 18rem;
+        border: 1px solid #d6d6d6;
+        border-radius: 15px;
+        background-color: #e3e3e3;
+        margin: 0.5rem;
+    }
 }
 
 

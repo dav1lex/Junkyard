@@ -1,0 +1,44 @@
+$color-red: red;
+$color-green: green;
+$color-blue: blue;
+$regularsize: 1rem;
+
+@mixin myarticle($color,$border-color,$f-size){
+  color: $color;
+  border: 1px solid $border-color;
+  font-size: $f-size;
+}
+
+.exercise {
+  border: 1px solid $color-red;
+  padding: 1em;
+
+
+  section {
+    display: flex;
+
+    article{
+      text-align: center;
+    }
+    .a-blue{
+      @include myarticle($color-blue,$color-green,$regularsize)
+    }
+
+    .a-red{
+      @include myarticle($color-red,$color-green,$regularsize)
+    }
+
+    .a-green{
+      margin-top: 1rem;
+      flex: 1;
+      @include myarticle($color-green,$color-blue,$regularsize * 1.5)
+    }
+
+  }
+
+  .exercise-title {
+    color: $color-green;
+    text-align: center;
+    text-decoration: underline $color-blue;
+  }
+}

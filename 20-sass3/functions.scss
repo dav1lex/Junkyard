@@ -1,0 +1,8 @@
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+//Deprecation Warning: Using / for division outside of calc() is deprecated
+// and will be removed in Dart Sass 2.0.0.
+//Recommendation: math.div($value, 16) or calc($value / 16)

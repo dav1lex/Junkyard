@@ -1,0 +1,5 @@
+@mixin makeArticle($color,$border-color,$f-size){
+  color: $color;
+  border: 1px solid $border-color;
+  font-size: $f-size;
+}

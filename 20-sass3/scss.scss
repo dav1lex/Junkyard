@@ -1,0 +1,46 @@
+@use "functions.scss";
+@use "article.scss";
+
+
+$color-red: red;
+$color-green: green;
+$color-blue: blue;
+
+//enter more than 16
+//$regularsize:
+
+.exercise {
+  border: 1px solid $color-red;
+  padding: 1em;
+
+
+  section {
+    display: flex;
+
+    article {
+      text-align: center;
+    }
+
+    .a-blue {
+      @include article.makeArticle($color-blue, $color-green, functions.toRem(16));
+    }
+
+    .a-red {
+      @include article.makeArticle($color-red, $color-green, functions.toRem(16));
+    }
+
+    .a-green {
+      margin-top: 1rem;
+      flex: 1;
+      @include article.makeArticle($color-green, $color-blue, functions.toRem(24));
+    }
+
+
+  }
+
+  .exercise-title {
+    color: $color-green;
+    text-align: center;
+    text-decoration: underline $color-blue;
+  }
+}

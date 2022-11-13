@@ -1,0 +1,25 @@
+.exercise {
+  border: 1px solid red;
+  padding: 1em;
+}
+.exercise .sections {
+  display: flex;
+}
+.exercise .sections article {
+  border: 1px solid green;
+  text-align: center;
+  padding: 1em;
+}
+.exercise .sections article:nth-child(odd) {
+  color: blue;
+}
+.exercise .sections article:nth-child(even) {
+  color: red;
+}
+.exercise .exercise-title {
+  color: green;
+  text-align: center;
+  text-decoration: underline blue;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
-@use "functions.scss";
-@use "article.scss";
+@use "functions.scss" as f;
+@use "article.scss" as a;
 
 
 $color-red: red;
@@ -22,17 +22,17 @@ $color-blue: blue;
     }
 
     .a-blue {
-      @include article.makeArticle($color-blue, $color-green, functions.toRem(16));
+      @include a.makeArticle($color-blue, $color-green, f.toRem(16));
     }
 
     .a-red {
-      @include article.makeArticle($color-red, $color-green, functions.toRem(16));
+      @include a.makeArticle($color-red, $color-green, f.toRem(16));
     }
 
     .a-green {
       margin-top: 1rem;
       flex: 1;
-      @include article.makeArticle($color-green, $color-blue, functions.toRem(24));
+      @include a.makeArticle($color-green, $color-blue, f.toRem(24));
     }
 
 

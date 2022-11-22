@@ -1,0 +1,64 @@
+@use "functions.scss" as f;
+@use "article.scss" as a;
+
+
+$color-red: red;
+$color-green: green;
+$color-blue: blue;
+
+.exercise {
+  border: 1px solid $color-red;
+  padding: 1em;
+
+  .titles{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+  }
+
+
+  section {
+    display: flex;
+
+    article {
+      text-align: center;
+    }
+
+    .a-blue {
+      @include a.makeArticle($color-blue, $color-green, f.toRem(16));
+    }
+
+    .a-red {
+      @include a.makeArticle($color-red, $color-green, f.toRem(16));
+    }
+
+    .a-green {
+      margin-top: 1rem;
+      flex: 1;
+      @include a.makeArticle($color-green, $color-blue, f.toRem(24));
+    }
+
+
+  }
+
+  %stilize {
+    color: $color-green;
+    text-align: center;
+    text-decoration: underline $color-blue;
+  }
+
+  .exercise-title {
+    @extend %stilize;
+
+  }
+
+  .small-title{
+    @extend  %stilize;
+    border: 1px solid $color-red;
+    padding: 1rem;
+    display: inline;
+    width: 20vw;
+  }
+
+
+}
